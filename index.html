@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your favourite music is here</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sidebar hide-sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" alt="" />
+              <a href="#">Your library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <div class="box-p1" id="box-p1">
+                <div class="btn-list-scroll">
+                  <button class="playlist" id="playlist">Playlists</button>
+                  <button class="artists" id="artists">Artists</button>
+                  <button class="albums" id="albums">Albums</button>
+                  <button class="shows" id="podcast">Podcasts & Shows</button>
+                </div>
+              </div>
+
+              <div class="box-p2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="icons-dropdown">
+                  <button class="recent-btn">Recents</button>
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+
+              <div class="playlist-lists" id="playlist-lists">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-heart"></i> Liked Songs
+                    <br />
+                    <p class="current">0 songs</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-music"></i> Create Your Playlist
+                  </li>
+                </ul>
+              </div>
+
+              <div class="podcast-lists" id="podcast-lists">
+                <ul>
+                  <button class="artists-lists-btn">
+                    <p
+                      style="
+                        font-size: medium;
+                        font-weight: 800;
+                        font-style: italic;
+                      "
+                    >
+                      Catergories
+                    </p>
+                    <li class="artists-list-hover-effect">2023 in Podcasts</li>
+                    <li class="artists-list-hover-effect">Podcast Charts</li>
+                    <li class="artists-list-hover-effect">
+                      Podcast New Releases
+                    </li>
+                    <li class="artists-list-hover-effect">Video Podcast</li>
+                    <li class="artists-list-hover-effect">
+                      Bussiness & Technology
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Self-help & Motivation
+                    </li>
+                    <li class="artists-list-hover-effect">Educational</li>
+                    <li class="artists-list-hover-effect">
+                      Devotion & Mythology
+                    </li>
+                    <li class="artists-list-hover-effect">History</li>
+                    <li class="artists-list-hover-effect">horror</li>
+                    <li class="artists-list-hover-effect">Stories</li>
+                    <li class="artists-list-hover-effect">
+                      Love & Relationships
+                    </li>
+                    <li class="artists-list-hover-effect">News</li>
+                    <li class="artists-list-hover-effect">Politics</li>
+                    <li class="artists-list-hover-effect">Sports</li>
+                    <li class="artists-list-hover-effect">Comedy</li>
+                    <li class="artists-list-hover-effect">Arts</li>
+                    <li class="artists-list-hover-effect">Entertainment</li>
+                    <li class="artists-list-hover-effect">Books</li>
+                    <li class="artists-list-hover-effect">Music</li>
+                    <br />
+                    <p
+                      style="
+                        font-size: large;
+                        font-weight: 800;
+                        font-style: italic;
+                      "
+                    >
+                      Language Catergory
+                    </p>
+
+                    <li class="artists-list-hover-effect">Tamil Podcast</li>
+                    <li class="artists-list-hover-effect">English Podcast</li>
+                    <li class="artists-list-hover-effect">Marathi Podcast</li>
+                    <li class="artists-list-hover-effect">Bengali Podcast</li>
+                    <li class="artists-list-hover-effect">Haryanvi Podcast</li>
+                    <li class="artists-list-hover-effect">Haryanvi Podcast</li>
+                  </button>
+                </ul>
+              </div>
+
+              <div class="albums-lists" id="albums-lists">
+                <ul>
+                  <button class="artists-lists-btn">
+                    <li class="artists-list-hover-effect">Animal</li>
+                    <li class="artists-list-hover-effect">Kabir Singh</li>
+                    <li class="artists-list-hover-effect">Aashiqui 2</li>
+                    <li class="artists-list-hover-effect">Tu hai kahan</li>
+                    <li class="artists-list-hover-effect">Moosetape</li>
+                    <li class="artists-list-hover-effect">Miami Vice</li>
+                    <li class="artists-list-hover-effect">Satranga</li>
+                    <li class="artists-list-hover-effect">Heeriye</li>
+                    <li class="artists-list-hover-effect">Arijit Singh</li>
+                    <li class="artists-list-hover-effect">Hot Hits Hindi</li>
+                    <li class="artists-list-hover-effect">Latest Tamil</li>
+                    <li class="artists-list-hover-effect">Hot Hits Punjabi</li>
+                    <li class="artists-list-hover-effect">Hot Hits Bengali</li>
+                    <li class="artists-list-hover-effect">Rap 91</li>
+                    <li class="artists-list-hover-effect">Tollywood Special</li>
+                    <li class="artists-list-hover-effect">Bollywood Special</li>
+                    <li class="artists-list-hover-effect">Hollywood SPecial</li>
+                    <li class="artists-list-hover-effect">On Repeat</li>
+                    <li class="artists-list-hover-effect">Repaeat Rewind</li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2000 Bollywood
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2005 Bollywood
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2010 Bollywood
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2015 Bollywood
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2020 Bollywood
+                    </li>
+                    <li class="artists-list-hover-effect">
+                      Best of 2023 Bollywood
+                    </li>
+                  </button>
+                </ul>
+              </div>
+
+              <div class="artists-lists" id="artists-lists">
+                <ul>
+                  <button class="artists-lists-btn">
+                    <li class="artists-list-hover-effect">Shaan</li>
+                    <li class="artists-list-hover-effect">Mika Singh</li>
+                    <li class="artists-list-hover-effect">Anupam Roy</li>
+                    <li class="artists-list-hover-effect">Alka yagnik</li>
+                    <li class="artists-list-hover-effect">Sonu Nigam</li>
+                    <li class="artists-list-hover-effect">Shreya Ghoshal</li>
+                    <li class="artists-list-hover-effect">Alan Walker</li>
+                    <li class="artists-list-hover-effect">KK</li>
+                    <li class="artists-list-hover-effect">Arijit Singh</li>
+                    <li class="artists-list-hover-effect">Udit Narayan</li>
+                    <li class="artists-list-hover-effect">Alka Yagnik</li>
+                    <li class="artists-list-hover-effect">
+                      S. P. Balasubrahmanyam
+                    </li>
+                    <li class="artists-list-hover-effect">Sunidhi Chauhan</li>
+                    <li class="artists-list-hover-effect">AR Rahman</li>
+                    <li class="artists-list-hover-effect">Mohit Chauhan</li>
+                    <li class="artists-list-hover-effect">
+                      Krishnakumar Kunnath KK
+                    </li>
+                    <li class="artists-list-hover-effect">Javed Ali</li>
+                  </button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content" id="main-con">
+        <div class="sticky-nav">
+          <div class="nav-icons">
+            <img
+              class="backward"
+              src="/assets/backward_icon.png"
+              alt="backward"
+            />
+            <img
+              class="forward hide"
+              src="/assets/forward_icon.png"
+              alt="forward"
+            />
+          </div>
+
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-btn">
+              <i
+                class="fa-regular fa-circle-down nav-item"
+                style="margin-right: 5px"
+              ></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-bell nav-item"></i>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <div>
+          <h2>Recently Played</h2>
+          <div class="card-container">
+            <div class="card" id="card">
+              <img src="/covers/5.jpg" alt="music-card" class="card-img" />
+              <p class="card-tittle">Top 50 - Global</p>
+              <p class="card-info">Your daily update of most played tracks</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Made For You</h2>
+        <div class="card-container">
+          <div class="card" id="card">
+            <img src="assets/card2img.jpeg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="/covers/1.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/2.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="/covers/3.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+        </div>
+
+        <h2>Trending Near You</h2>
+        <div class="card-container">
+          <div class="card" id="card">
+            <img src="assets/card3img.jpeg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="assets/card4img.jpeg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="assets/card5img.jpeg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="assets/card6img.jpeg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+        </div>
+
+        <h2>Greatest of All Time</h2>
+        <div class="card-container">
+          <div class="card" id="card">
+            <img src="covers/4.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/5.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/6.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/7.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+        </div>
+
+        <h2>Big Hits</h2>
+        <div class="card-container">
+          <div class="card" id="card">
+            <img src="covers/8.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/9.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+
+          <div class="card" id="card">
+            <img src="covers/10.jpg" alt="music-card" class="card-img" />
+
+            <p class="card-tittle">Top 50 - Global</p>
+            <p class="card-info">Your daily update of most played tracks</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <div class="songinfo">
+          <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        </div>
+
+        <div class="songstbn">
+          <i class="fa-solid fa-backward-step" id="previous-play"></i>
+          <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+          <i class="fa-solid fa-forward-step" id="next-play"></i>
+        </div>
+        <input
+          type="range"
+          name="range"
+          id="myProgressBar"
+          min="0"
+          value="0"
+          max="100"
+        />
+
+
+        
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
